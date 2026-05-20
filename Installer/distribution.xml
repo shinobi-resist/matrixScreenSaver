@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-gui-script minSpecVersion="2">
+    <title>MatrixScreenSaver</title>
+    <welcome file="welcome.html" mime-type="text/html"/>
+    <conclusion file="conclusion.html" mime-type="text/html"/>
+    <options customize="never" hostArchitectures="arm64,x86_64"/>
+    <choices-outline>
+        <line choice="default">
+            <line choice="com.shinobi-resist.matrixscreensaver"/>
+        </line>
+    </choices-outline>
+    <choice id="default"/>
+    <choice id="com.shinobi-resist.matrixscreensaver" visible="false">
+        <pkg-ref id="com.shinobi-resist.matrixscreensaver"/>
+    </choice>
+    <pkg-ref id="com.shinobi-resist.matrixscreensaver" onConclusion="none">MatrixScreenSaver-component.pkg</pkg-ref>
+</installer-gui-script>
